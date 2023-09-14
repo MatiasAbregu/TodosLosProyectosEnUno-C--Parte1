@@ -75,9 +75,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(113, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(581, 30);
+            this.label1.Size = new System.Drawing.Size(564, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "¡Bienvenido/a, selecciona a la aplicación que deseas ingresar!";
+            this.label1.Text = "¡Bienvenido/a, selecciona la aplicación que deseas ingresar!";
             // 
             // label2
             // 
