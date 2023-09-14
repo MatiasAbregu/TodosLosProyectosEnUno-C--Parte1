@@ -73,11 +73,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(113, 9);
+            this.label1.Location = new System.Drawing.Point(73, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(564, 30);
+            this.label1.Size = new System.Drawing.Size(644, 30);
             this.label1.TabIndex = 1;
-            this.label1.Text = "¡Bienvenido/a, selecciona la aplicación que deseas ingresar!";
+            this.label1.Text = "¡Bienvenido/a, selecciona la aplicación que a la que deseas ingresar!";
             // 
             // label2
             // 
