@@ -25,7 +25,7 @@ namespace TodosLosProyectosEnUno_C__Parte1
     public partial class Form13 : Form
     {
 
-        private double total = 0;
+        private double total = 0, totalTemp;
 
         public Form13()
         {
@@ -45,7 +45,7 @@ namespace TodosLosProyectosEnUno_C__Parte1
                         $"Precio del producto: {textBox2.Text} \r\n" +
                         $"Precio del producto con descuento por usar efectivo: " +
                         $"{double.Parse(textBox2.Text) - (double.Parse(textBox2.Text) * 10) / 100}";
-                    total += double.Parse(textBox2.Text) - (double.Parse(textBox2.Text) * 10) / 100;
+                    totalTemp = double.Parse(textBox2.Text) - (double.Parse(textBox2.Text) * 10) / 100;
                 }
                 catch (Exception ex)
                 {
@@ -66,7 +66,7 @@ namespace TodosLosProyectosEnUno_C__Parte1
                     if (textBox2.Text.Contains(".")) textBox2.Text = textBox2.Text.Replace(".", ",");
                     textBox3.Text = $"Nombre del Producto: {textBox1.Text} \r\n" +
                         $"Precio del producto: {textBox2.Text} \r\n";
-                    total += double.Parse(textBox2.Text);
+                    totalTemp = double.Parse(textBox2.Text);
                 }
                 catch (Exception ex)
                 {
@@ -90,6 +90,7 @@ namespace TodosLosProyectosEnUno_C__Parte1
             if(textBox3.Text == "") MessageBox.Show("El campo temporal está vacio. Introduce un producto");
             else
             {
+                total += totalTemp;
                 label3.Text = $"Total: {total}";
                 textBox4.AppendText(textBox3.Text + "\r\n\r\n");
                 textBox3.Text = "";
